@@ -5,14 +5,18 @@ How to Run :
 #1 : checkoutdownload the Project @ https://github.com/technopreneur-milind/Project
 
 You will get 2 Projects as a result of this :
+
 a) ecommerce2 : This is server side Application built on top of Spring Boot & exposing Rest Points
+
 b) packages-shop : This is a application built in typescript
 
 #2 : Starting the Backend Server : 
+
   a) Navigate to ecommerce2 from a Terminal
   Execute run.sh and you should see server available at 8080
   Navigate to following link to make sure , server has started :
   http://localhost:8080/ecommerce/packages
+  
   
 #3 : Starting the UI 
  There are multiple ways of running the UI 
