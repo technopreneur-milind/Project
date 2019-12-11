@@ -13,8 +13,12 @@ b) packages-shop : This is a application built in typescript
     #2 : Starting the Backend Server : 
 
   a) Navigate to ecommerce2 from a Terminal
-  Execute run.sh and you should see server available at 8080
+  
+  Execute run.sh  
+  You should see server available at 8080
+  
   Navigate to following link to make sure , server has started :
+  
   http://localhost:8080/ecommerce/packages
   
   
