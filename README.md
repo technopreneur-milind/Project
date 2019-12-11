@@ -77,6 +77,6 @@ b) packages-shop : This is a application built in typescript
                     
  
  
- For any issues , please reach out to : milind.technopreneur@gmail.com/+49 162 454 3978
+ For any issues , please reach out to : milind.technopreneur@gmail.com
  
  
