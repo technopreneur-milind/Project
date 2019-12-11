@@ -54,6 +54,8 @@ b) packages-shop : This is a application built in typescript
                               ./buildDockerNRun.sh 
  
  
+ 
+ 
       #4 : Navigate to UI
       
  Now navigate to http://docker-ip:4200 ( if you are running UI with docker) 
