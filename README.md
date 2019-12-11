@@ -2,6 +2,7 @@ This is a packages shop simulation where you can shop for packages.
 
 How to Run :
 #1 : checkoutdownload the Project @ https://github.com/technopreneur-milind/Project
+
 You will get 2 Projects as a result of this :
 a) ecommerce2 : This is server side Application built on top of Spring Boot & exposing Rest Points
 b) packages-shop : This is a application built in typescript
