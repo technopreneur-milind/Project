@@ -33,12 +33,12 @@ b) packages-shop : This is a application built in typescript
          #Way3 : Build Docker Image on local & run it !
  If you want to go this way , run buildDockerNRun.sh 
  
-      #4 :
- Now navigate to docker-ip:4200 ( if you are running UI with docker) or navigate to localhost:4200 otherwise
+      #4 : Navigate to UI
+ Now navigate to http://docker-ip:4200 ( if you are running UI with docker) or navigate to http://localhost:4200 otherwise
  Tip : You can find your docker-ip by running following command 
  docker-machine ip  ( for me it is 192.168.99.100 or 192.168.99.101)
  
-      #5 : 
+      #5 : Start Purchasing the packages
  Navigate to packages tab and you should be able to see list of packages here.
  
  
