@@ -14,7 +14,7 @@ b) packages-shop : This is a application built in typescript
 
   a) Navigate to ecommerce2 from a Terminal
   
-  Execute following sh file as :
+                     Execute following sh file as :
                           ./run.sh  
   In about 2 mins, You should see server available at 8080
   
