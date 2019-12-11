@@ -70,6 +70,10 @@ b) packages-shop : This is a application built in typescript
  
  
  
+                    Important : Please refer to Project_Screenshots.docx for some screenshots captured from the application
+                    This file is available at root directory (Project)
+                    https://github.com/technopreneur-milind/Project/blob/master/Project_Screenshots.docx
+ 
  
  For any issues , please reach out to : milind.technopreneur@gmail.com/+49 162 454 3978
  
