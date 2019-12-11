@@ -1,0 +1,35 @@
+<!-- grid layout -->
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      {{ package1.name }}
+    </p>
+    <span class="card-header-icon has-text-grey-light">
+      <small>{{ package1.price | currencyconvert }}</small>
+    </span>
+  </header>
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <img [src]="package1.image" [alt]="package1.name" [routerLink]="['/packages', package1.id]">
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="content has-text-centered">
+       {{ package1.description | truncate:60 }}
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a class="card-footer-item has-text-dark" [routerLink]="['/packages', package1.id]">
+      <span class="icon">
+        <i class="fas fa-search-plus"></i>
+      </span>
+      View
+    </a>
+    <a class="card-footer-item has-text-dark" style="cursor: pointer;" (click)="onAddToCart(package1)">
+      <span class="icon">
+        <i class="fas fa-cart-plus"></i>
+      </span>
+      Add to Cart
+    </a>
+  </footer>
+</div>

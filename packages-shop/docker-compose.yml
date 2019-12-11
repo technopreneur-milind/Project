@@ -1,0 +1,17 @@
+version: "3"
+networks:
+  api_server_default:
+    external: true
+
+services:
+  # The application image
+  packages-shop:
+    networks:
+      - api_server_default
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      ENV_NAME: prod
+    ports:
+      - 4200:4200

@@ -1,0 +1,29 @@
+<!-- list layout -->
+  <td class="card--list__img">
+    <img [src]="package1.image" [alt]="package1.name" [routerLink]="['/packages', package1.id]"/>
+  </td>
+  <td class="card--list__name">
+    <h2>
+      <strong>{{ package1.name }}</strong>
+    </h2>
+    <p>{{ package1.description | truncate:200 }}</p>
+  </td>
+  <td class="card--list__price">
+    <div>
+      {{ package1.price | currencyconvert }}
+    </div>
+  </td>
+  <td class="card--list__ctas">
+    <div class="buttons has-addons">
+      <a class="button" [routerLink]="['/packages', package1.id]">
+        <span class="icon is-small">
+          <i class="fas fa-search-plus"></i>
+        </span>
+      </a>
+      <a class="button" (click)="onAddToCart(package1)">
+        <span class="icon is-small">
+          <i class="fas fa-cart-plus"></i>
+        </span>
+      </a>
+    </div>
+  </td>

@@ -1,0 +1,66 @@
+<div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link" routerLink="/cart">
+      <span class="icon">
+        <i class="fas fa-shopping-cart"></i>
+      </span>
+      Cart &nbsp; <span class="tag is-light">
+        {{ cartminiPackages.length }}
+      </span>
+    </a>
+    <div class="navbar-dropdown is-boxed mini-cart">
+
+
+
+      <ng-container *ngIf="cartminiPackages.length">
+
+        <div class="navbar-item" *ngFor="let cartMinipackage of cartminiPackages; let i = index">
+          <div class="media">
+            <div class="media-content">
+              <p class="subtitle is-6">
+                <a class="prodName" [routerLink]="['/packages', cartMinipackage.id]">
+                  <b>{{ cartMinipackage.name }}</b>
+                  <br />
+                  <small><i>{{ getConvertedValue(cartMinipackage.price)}}</i></small>
+                </a>
+
+                <span>
+                  <span class="tag is-dark">{{ cartMinipackage.qty }}</span>
+                  <span class="icon mini-cart-single-trash has-text-danger" (click)="removeCartPackages(i)">
+                    <i class="fas fa-trash-alt"></i>
+                  </span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="navbar-divider">
+        <p class="navbar-item mini-cart-total">
+          <b>Total: </b>&nbsp; {{ getConvertedValue(cartminiTotal) }}
+        </p>
+        <p class="navbar-item mini-cart-total">
+          <b>Less(Discount): </b>&nbsp; {{ getConvertedValue(getDiscount()) }}
+        </p>
+        <p class="navbar-item mini-cart-total">
+          <b>Total to be Paid: </b>&nbsp; {{ getConvertedValue(getTotalPostDiscount()) }} &nbsp; - &nbsp;
+
+          <span class="icon mini-cart-all-trash has-text-danger" (click)="emptyCart()">
+            <i class="fas fa-trash-alt"></i>
+          </span>
+        </p>
+
+        <p class="navbar-item mini-cart__go-to-cart" routerLink="/cart">
+          <a class="button is-success">
+            <span class="icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>&nbsp; Go to Cart
+          </a>
+        </p>
+      </ng-container>
+
+
+      <p class="navbar-item mini-cart__empty" *ngIf="!cartminiPackages.length">No items in cart</p>
+
+
+    </div>
+  </div>

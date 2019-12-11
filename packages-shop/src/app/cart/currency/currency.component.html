@@ -1,0 +1,7 @@
+<div>
+  <h2>Currency</h2>
+
+  <select (change)="currencyChange($event)" >
+    <option *ngFor="let c of currencies" [ngValue]="c">{{ c}}</option>
+  </select>
+</div>

@@ -1,0 +1,101 @@
+<div *ngIf="isLoading" class="loaderOverlay">
+  <div class="loader">Loading...</div>
+</div>
+
+
+<div class="columns">
+  <div class="column is-two-thirds">
+    <div class="card">
+      <header class="card-header">
+        <p class="card-header-title">
+          {{ package1 ? package1.name : 'loading' }}
+        </p>
+        <span class="card-header-icon">
+          <small>{{ package1 ? (package1.price | currencyconvert) : 'loading' }}</small>
+        </span>
+      </header>
+      <style>
+        table, td  {
+          border: 1px solid grey;
+          border-collapse: collapse;
+          padding: 5px;
+        }
+      </style>
+      <table>
+        <h1> Product details : </h1>
+        <tr *ngFor="let product of package1.products;">
+          <td ng-if="$odd" style="background-color:#f1f1f1">
+            {{ product.name }}</td>
+          <td ng-if="$odd" style="background-color:#f1f1f1">
+            {{ product.description }}</td>
+          <td ng-if="$odd" style="background-color:#f1f1f1">
+            {{ product.price }}</td>
+        </tr>
+      </table>
+
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img [src]="package1 ? package1.image : 'http://via.placeholder.com/500x500'" [alt]="package1.name" />
+        </figure>
+      </div>
+      <!--<tr *ngFor="let product of package1.products;">
+        <td class="cart-desc">
+          <div class="has-text-centered" align="centered">
+          <h2>
+            <strong>{{ product.name }}</strong>
+          </h2>
+          </div>
+        </td>
+
+        <td class="cart-desc">
+          <div class="has-text-centered" align="centered">
+            <h2>
+              <strong>{{ product.description }}</strong>
+            </h2>
+          </div>
+        </td>
+        <td class="cart-desc">
+          <div class="has-text-centered" align="centered">
+            <h2>
+              <strong>{{ product.price }}</strong>
+            </h2>
+          </div>
+        </td>
+      </tr>-->
+    </div>
+  </div>
+  <div class="column is-one-third">
+    <a class="button is-light" routerLink="/packages">
+      <span class="icon">
+        <i class="fas fa-arrow-left"></i>
+      </span>&nbsp; Back to Products
+    </a>
+
+    <hr>
+
+    <a class="button is-success" (click)="addToCart(package1)">
+      <span class="icon">
+        <i class="fas fa-cart-plus"></i>
+      </span>&nbsp; Add to Cart
+    </a>
+
+    <hr>
+
+    <div class="card-content">
+      <div class="content">
+
+        {{ package1 ? package1.description : 'loading' }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- <h3 class="similar-items-title">You may also be interested in these</h3> -->
+<!-- <div class="columns is-multiline">
+  <app-product-card
+    class="column is-one-third-desktop"
+    *ngFor="let product of similarProducts"
+    [product]="product"></app-product-card>
+</div> -->
