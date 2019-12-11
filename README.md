@@ -38,7 +38,9 @@ b) packages-shop : This is a application built in typescript
          #Way2 : (Without Docker)
          
  If you want to run it without docker: 
-                               Execute following sh file as :
+ 
+                             Execute following sh file as :
+                             
                             ./run.sh  
  This will download the required libraries and get application running in some time ( This may take up to 5 minutes)
  
@@ -46,7 +48,9 @@ b) packages-shop : This is a application built in typescript
          #Way3 : Build Docker Image on local & run it !
          
  If you want to go this way ,
+ 
                               Execute following sh file as :
+                          
                               ./buildDockerNRun.sh 
  
  
