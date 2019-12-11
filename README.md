@@ -56,7 +56,7 @@ b) packages-shop : This is a application built in typescript
  
  
  
-      #4 : Navigate to UI
+   #4 : Navigate to UI
       
  Now navigate to http://docker-ip:4200 ( if you are running UI with docker) 
  
@@ -66,7 +66,7 @@ b) packages-shop : This is a application built in typescript
  
  docker-machine ip  ( for me it is 192.168.99.100 or 192.168.99.101)
  
-      #5 : Start Purchasing the packages
+   #5 : Start Purchasing the packages
       
  Navigate to packages tab and you should be able to see list of packages here.
  
