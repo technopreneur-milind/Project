@@ -15,7 +15,7 @@ b) packages-shop : This is a application built in typescript
   a) Navigate to ecommerce2 from a Terminal
   
   Execute run.sh  
-  You should see server available at 8080
+  In about 2 mins, You should see server available at 8080
   
   Navigate to following link to make sure , server has started :
   
@@ -24,6 +24,7 @@ b) packages-shop : This is a application built in typescript
   
     #3 : Starting the UI 
  There are multiple ways of running the UI 
+ 
  For all the ways, first please navigate to packages-shop directory from the terminal
  
         #Way1 : For this way , you need to have docker on your machine and access to docker-hub
