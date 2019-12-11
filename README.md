@@ -30,19 +30,20 @@ b) packages-shop : This is a application built in typescript
         #Way1 : For this way , you need to have docker on your machine and access to docker-hub
  The Docker image is available at https://hub.docker.com/repository/docker/milindtechnopreneur/packages-shop
  
-  execute runAsDocker.sh  
+                            execute runAsDocker.sh  
   This will download the image from docker-hub and get the application running , easy !
   
          #Way2 : (Without Docker)
          
  If you want to run it without docker: 
- execute run.sh 
+                               execute run.sh 
  This will download the required libraries and get application running in some time ( This may take up to 5 minutes)
  
  
          #Way3 : Build Docker Image on local & run it !
          
- If you want to go this way , run buildDockerNRun.sh 
+ If you want to go this way ,
+                              execute buildDockerNRun.sh 
  
  
       #4 : Navigate to UI
