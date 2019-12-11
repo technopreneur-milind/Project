@@ -57,6 +57,7 @@ b) packages-shop : This is a application built in typescript
       #4 : Navigate to UI
       
  Now navigate to http://docker-ip:4200 ( if you are running UI with docker) 
+ 
  or navigate to http://localhost:4200 otherwise.
  
  Tip : You can find your docker-ip by running following command 
